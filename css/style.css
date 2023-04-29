@@ -108,7 +108,7 @@ a {
   text-transform: uppercase;
 }
 
-.header {
+.header-row {
   min-height: 100px;
   align-items: center;
 }
@@ -184,4 +184,67 @@ a {
 }
 .sign-in-btn:hover {
   background-color: var(--ENGINEERING-INTERNATIONAL-ORANGE);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-row {
+  align-items: center;
+  min-height: 549px;
+  height: 100%;
+}
+
+.hero-content {
+  max-width: 574px;
+  width: 100%;
+}
+
+.hero-content-title {
+  font-weight: 700;
+  font-size: 72px;
+  color: var(--DARK-GREEN);
+  line-height: 74px;
+  margin-bottom: 4px;
+}
+
+.hero-content-subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 58px;
+  color: var(--DARK-GREEN);
+  margin-bottom: 36px;
+}
+
+.hero-link {
+  max-width: 182px;
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  transition: ease-in-out 0.2s;
+}
+.hero-link:hover {
+  background-color: var(--ENGINEERING-INTERNATIONAL-ORANGE);
+}
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
+.hero-image::before {
+  content: "";
+  width: 89px;
+  height: 100%;
+  top: 0;
+  left: -89px;
+  background-color: var(--WHITE);
+  position: absolute;
+  box-shadow: 10px 0 100px 140px var(--WHITE);
+}
+
+.hero-image img {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
