@@ -223,6 +223,7 @@ a {
   height: 50px;
   font-size: 24px;
   transition: ease-in-out 0.2s;
+  outline-color: var(--ENGINEERING-INTERNATIONAL-ORANGE);
 }
 .hero-link:hover {
   background-color: var(--ENGINEERING-INTERNATIONAL-ORANGE);
@@ -247,4 +248,123 @@ a {
 
 .hero-image img {
   display: block;
+}
+
+.column {
+  padding: 60px 0 113px;
+}
+
+.column-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.column-row {
+  justify-content: center;
+  max-width: 990px;
+  padding: 0 20px;
+  margin: 0 auto;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.column-item {
+  flex-direction: column;
+  align-items: center;
+  max-width: 290px;
+  min-height: 530px;
+  padding: 24px 16px;
+  text-align: center;
+  border: 1px solid var(--X11-GRAY);
+  border-radius: 180px 180px 30px 30px;
+  transition: 0.3s;
+  cursor: default;
+}
+.column-item:hover {
+  box-shadow: -15px 15px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.column-item-img {
+  width: 205px;
+  height: 209px;
+  margin-bottom: 21px;
+}
+
+.column-item-content {
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.column-item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+
+.column-item-desc {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--DARK-CHARCOAL);
+  margin-bottom: 21px;
+}
+
+.column-item-price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--PIGMENT-GREEN);
+  margin-bottom: 21px;
+}
+
+.content-item-btns {
+  margin-top: auto;
+}
+
+.select-row {
+  position: relative;
+}
+
+.select-row::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 23px;
+  background-image: url("../img/arrow.svg");
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+
+.column-item-select {
+  max-width: 243px;
+  width: 100%;
+  height: 40px;
+  font-family: var(--first-family);
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 9px 16px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--DARK-CHARCOAL);
+  border: 1px solid var(--DARK-LIVER);
+  cursor: pointer;
+}
+
+.column-item-btn {
+  max-width: 243px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  outline-color: var(--ENGINEERING-INTERNATIONAL-ORANGE);
+}
+.column-item-btn:hover {
+  background-color: var(--ENGINEERING-INTERNATIONAL-ORANGE);
+}
+.column-item-btn:focus {
+  background-color: var(--ELECTRIC-RED);
 }/*# sourceMappingURL=style.css.map */
